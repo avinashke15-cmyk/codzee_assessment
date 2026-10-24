@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debounced Search Race</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 16px; }
+    input { width: 100%; box-sizing: border-box; padding: 12px; font-size: 18px; }
+    #status { margin: 12px 0; color: #666; min-height: 24px; }
+    #results { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+    .result { padding: 12px; border-bottom: 1px solid #eee; }
+    .result:last-child { border-bottom: 0; }
+    .muted { color: #777; }
+  </style>
+</head>
+<body>
+  <h1>Search</h1>
+  <input id="search" type="search" placeholder="Try typing: a → ab → abc quickly" autocomplete="off">
+  <div id="status"></div>
+  <div id="results"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
